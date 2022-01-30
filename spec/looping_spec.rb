@@ -1,6 +1,16 @@
 require_relative 'spec_helper'
 require_relative '../looping'
 
+
+def happy_new_year
+  counter = 10
+  until counter == 0
+    puts "#{counter}"
+    counter -= 1
+  end
+  puts "Happy New Year!"
+end
+
 describe '#happy_new_year' do
 
   it 'puts out a countdown from 10 to 1, followed by "Happy New Year!' do
